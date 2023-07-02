@@ -1,0 +1,266 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+ 
+body {
+    min-height: 100dvh;
+}
+
+.nav-header {
+    background-color: #2E323F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list-logo {
+    margin-left: -10%;
+}
+
+
+li.header {
+    font-family: 'Oswald Bold', sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-transform: uppercase;  
+    margin-bottom: 1em;
+}
+
+a.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+header {
+    background-color: #3B4050;
+}
+
+h1 {
+    font-family: 'Oswald Bold', sans-serif;
+    font-weight: 700;
+    font-size: 5.625rem;
+    margin-left: 2rem;
+}
+
+span.white {
+    color: white;
+}
+
+span.brown {
+    color: #A59678;
+}
+
+.header-para {
+    font-family: 'Montserrat Regular', serif;
+    font-size: 1.5rem;
+    color: white;
+    line-height: 1.5;
+    padding-left: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+button {
+    background-color: #A59678;
+    font-family: 'Oswald Bold', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 100px;
+}
+
+button.sign-up {
+    padding: .1rem;
+    align-self: flex-start;
+}
+
+button.want-to-learn {
+    padding: .5em;
+    margin-left: 5rem;
+    margin-bottom: 2em;
+}
+.container {
+    max-width: 1200px;
+}
+
+h2, h3 {
+    font-family: 'Oswald Bold', sans-serif;
+    font-weight: 700;
+}
+
+section > div.row > div.col > h2, h3 {
+    color: #A59678;
+}
+
+section.one, aside > h2 {
+    font-size: 1.875rem;
+}
+
+p {
+    font-family: 'Montserrat Regular', serif;
+    font-weight: 400;
+}
+
+section.one > div.row > div.col > p, aside > p {
+    font-size: 1.125rem;
+}
+
+section.two > div.row > div.col > h2 {
+    font-size: 2.25rem;
+}
+
+section.two > div.row > div.col > p {
+    font-size: 1.3125rem;
+}
+img {
+    max-width: 550px;
+}
+
+aside {
+    background-color: #3B4050;
+    color: white;
+    font-size: 1.125rem;
+    max-width: 550px;
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+}
+
+aside > div.col > h2 {
+    font-size: 1.875rem;
+    text-align: center;
+
+}
+
+aside >  div.col > p {
+    text-align: center;
+}
+
+footer {
+    background-color:#3B4050;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer-para {
+    font-size: 1rem;
+    color: #6F737F;
+    max-width: 65%;
+    line-height: 1.5;
+    margin-left: 2rem;
+    
+}
+
+.footer-heading {
+    color: white;
+    font-family: 'Oswald Bold', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15rem;
+}
+
+h3 {
+    font-size: 1.3125rem;
+    text-align: center;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+li.footer {
+    padding-bottom: 2em;
+}
+
+a.footer {
+    color: #6F737F;
+    text-decoration: none;
+}
+
+@media (min-width: 700px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+ 
+
+    .col {
+        max-width: 55%;
+    }
+
+    aside {
+        margin-right: 1rem;
+        max-width: 300px;
+    }
+
+
+footer > .col {
+    max-width: 35%;
+}
+}
+
+
+@media(min-width: 701px) and (max-width: 1000px) {
+    .col {
+        max-width: 65%;
+    }
+
+    .website-mockup {
+        min-width: 700px;
+    }
+
+    .logo {
+        max-width: 50px;
+    }
+
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-list {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 5em;
+    }
+
+    .sign-up {
+        min-width: 8rem;
+    }
+
+    .want-to-learn {
+        min-width: 10rem;
+    }
+    
+    .nav-list > li:first-child {
+        margin-left: 10rem;
+    }
+    
+    .nav-list > li {
+        margin-right: 3em;
+    }
+    
+
+    .header-para {
+        margin-top: 15%;
+    }
+}
